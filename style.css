@@ -828,7 +828,7 @@ body.dark-mode footer{
     background-color:rgba(44, 44, 44, 0.575) ;
 }
 
-@media screen and (max-width:700px) {
+@media (max-width:700px) {
         body{
             height: 100vh;
         }
