@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4140/4140077.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a id="to-top"></a>
+    <header>
+        <div class="author-name"><img src="assets/developer.png" alt="developer-icon"><span>&lt; EMMANUEL SAPICO ABLAO /&gt;</span></div>       
+    </header>
+            <nav class="nav-bar-icon">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#jump-about">Intro</a></li>
+                    <li><a href="#jump-project">Works</a></li>
+                    <li><a href="#jump-certificate">Certificate</a></li>
+                    <li><a href="#jump-contact">Contact</a></li>
+                    <button onclick="toggleTheme()"><img src="https://cdn-icons-png.flaticon.com/128/7645/7645197.png" style="transition: 0.4s ease-in-out;" alt="" id="image_button"></button>
+                </ul>
+            </nav>
+</article>
+    <nav class="nav-bar" style="display: none;">
+        <ul>
+            <!-- <img src="https://cdn-icons-png.flaticon.com/128/3079/3079182.png" alt=""> -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#jump-about">Intro</a></li>
+            <li><a href="#jump-project">Works</a></li>
+            <li><a href="#jump-certificate">Certificate</a></li>
+            <li><a href="#jump-contact">Contact</a></li>
+            <button onclick="toggleTheme()"><img src="https://cdn-icons-png.flaticon.com/128/7645/7645197.png" style="transition: 0.4s ease-in-out;" alt="" id="image_button"></button>
+        </ul>
+    </nav>
+    <main>
+        <article class="intro-container">
+            <figure class="intro-content">
+                <div class="profile-text">
+                    <h1>Hi, I'm <span>Emman</span></h1>
+                    <P>Frontend Web Developer</P>
+                    <P id="note-text">I am a dedicated student from the <span style="font-size: var(--text-size-M);">Philippines</span>  with a passion for creating awesome websites. You can trust in my commitment to design and functionality.</P>
+                </div>
+                <div class="profile-pic">
+                    <img src="assets/profile.jpg" alt="">
+                </div>
+                
+            </figure>
+        </article>
+        <a id="jump-about"></a>
+        <section class="about-section">
+            <article class="about-container">
+                <figure class="about-content">
+                    <div class="about-picture">
+                        <img src="assets/profile-image.jpg" alt="">
+                    </div>
+                    <div class="about-me">
+                        <p class="head-text">MyIntro</p>
+                        <h4>ABOUT ME</h4>
+                        <p>I am a frontend web developer capable of creating a simple static website using basic HTML, CSS, and JavaScript. Although I have no work experience yet, I am currently pursuing my college degree in BSIT.</p>
+                        <br/>
+                        <div class="author-info">
+                            <div class="backgrouds">
+                                <h5 id="educ-button">Education</h5>
+                                <h5 id="skill-button">Skills</h5>
+                            </div>
+                            <div class="educ" id="educ">
+                                <dl>
+                                    <dt>PRIMARY</dt>
+                                        <dd>Capalonga Centra Elementary School</dd>
+                                        <dd>2004-2010</dd>
+                                    <dt>SECONDARY</dt>
+                                        <dd>Capalonga Parochial School</dd>
+                                        <dd>2010-2014</dd>
+                                    <dt>VOCATIONAL (2 years)</dt>
+                                        <dd>Gateways Institute of Information and Technology</dd>
+                                        <dd>2014-2016</dd>
+                                    <dt>TERTIARY</dt>
+                                        <dd>Institute of Creative Computer Technology (ICCT ANTIPOLO)</dd>
+                                        <dd>2018-Current year (Continuing)</dd>
+                                </dl>
+                            </div>
+                            <div class="skills" id="skills">
+                                <div class="skill">
+                                    <div class="skilled-container">
+                                        <div class="phase-one">
+                                            <div class="course-percent">
+                                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" alt="html-icon"><p>Html</p>
+                                                <P>90%</P>
+                                            </div>
+                                           <div class="progress-bar"><div class="filler" style="width:90%;"></div></div>
+                                           <div class="course-percent">
+                                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="css-icon"><p>Css</p>
+                                                <P>80%</P>
+                                            </div>
+                                            <div class="progress-bar"><div class="filler" style="width:80%;"></div></div>
+                                            <div class="course-percent">
+                                                 <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="javascript-icon"><p>JavaScript</p>
+                                                 <P>60%</P>
+                                             </div>
+                                             <div class="progress-bar"><div class="filler" style="width:60%;"></div></div>
+                                             <div class="course-percent">
+                                                <img src="https://cdn-icons-png.flaticon.com/128/2232/2232137.png" alt="database-icon"><p>Firestore (NoSQL)</p>
+                                                <P>70%</P>
+                                            </div>
+                                            <div class="progress-bar"><div class="filler" style="width:70%;"></div></div>
+                                            <div class="course-percent">
+                                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968332.png" alt="php-icon"><p>Php</p>
+                                                <P>30%</P>
+                                            </div>
+                                            <div class="progress-bar"><div class="filler" style="width:30%;"></div></div>
+                                            <div class="course-percent">
+                                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968282.png" alt="java-icon"><p>Java</p>
+                                                <P>40%</P>
+                                            </div>
+                                            <div class="progress-bar"><div class="filler" style="width:40%;"></div></div>
+                                        </div>
+                                        <div class="phase-two">
+                                            <div class="course-percent">
+                                                <img src="https://cdn-icons-png.flaticon.com/128/919/919852.png" alt="python-icon"><p>Python</p>
+                                                <P>10%</P>
+                                            </div>
+                                            <div class="progress-bar"><div class="filler" style="width:10%;"></div></div>
+                                            <div class="course-percent">
+                                                <img src="https://cdn-icons-png.flaticon.com/128/732/732220.png" alt="exel-icon"><p>Exel</p>
+                                                <P>60%</P>
+                                            </div>
+                                            <div class="progress-bar"><div class="filler" style="width:60%;"></div></div>
+                                        </div> 
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                        
+                        
+                        <h5>Interested</h5>
+                        <div class="about-interest">
+                            <p id="author-music" class="flex-icon">Music</p>
+                            <p id="author-movies" class="flex-icon">Movies</p>
+                            <p id="author-animes" class="flex-icon">Animes</p>
+                            <p id="author-foods" class="flex-icon">Foods</p>
+                            <p id="author-photos" class="flex-icon">Photos</p>
+                        </div>
+                    </div>
+                </figure>
+            </article>
+        </section>
+        <a id="jump-project"></a>
+        <section class="project-section">
+            <article class="project-container">
+                <p class="head-text">MyWorks</p>
+                <h1>projects</h1>
+                <figure class="project-content">
+                    
+                    <div class="project-box">
+                        <img src="assets/project-one.jpg" alt="project-one">   
+                    <div class="go-button">
+                        <p>It's a online grading system the allow the user to get an update grades before releasing the office grades in the official home page of the school</p>
+                        <div> 
+                            <a href="" id="go-github" class="flex-icon" style="justify-content: center;" >Github</a>
+                            <a href="" id="go-live" class="flex-icon" style="justify-content: center;">GoLive</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="assets/project-two.jpg" alt="project-two">
+                        
+                    <div class="go-button">
+                        <p>It's a online attendance record where the teacher can download the excel file after the student completly scanned the QR code</p>
+                        <div> 
+                            <a href="" id="go-github" class="flex-icon" style="justify-content: center;" >Github</a>
+                            <a href="" id="go-live" class="flex-icon" style="justify-content: center;">GoLive</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="assets/project-three.jpg" alt="project-three">
+                    <div class="go-button">
+                        <p>It's a online prospectus where the student can upload there student evaluation and then fill-up the grades, to validate the teacher before enrolling to the next semester</p>
+                        <div> 
+                        <a href="" id="go-github" class="flex-icon" style="justify-content: center;" >Github</a>
+                        <a href="" id="go-live" class="flex-icon" style="justify-content: center;">GoLive</a>
+                        </div>
+                    </div>
+                    </div>
+                </figure>
+            </article>
+        </section>
+        <a id="jump-certificate"></a>
+        <section class="certificate-section">
+            <article class="certificate-container">
+                <h1 class="head-text" >MyCertificate</h1>
+                <span>Certificates</span>
+                <figure class="certificate-content">
+                    <div class="certificate-box">
+                        <p class="flex-icon" id="front-end">This certificate acknowledges the successful completion of a 2-week online program focused on the essential principles of front-end web development. Participants gained knowledge in areas such as HTML, CSS, responsive design, and user experience (UX) fundamentals.</p>
+                        <img src="assets/front-end certificate.png" alt="fron-end-certificate" id="myImage1" onclick="enlargeImage('myImage1', 'closeButton1')">
+                        <button id="closeButton1" class="certificate-button" style="display: none;" onclick="closeImage('myImage1', 'closeButton1')"><img src="https://cdn-icons-png.flaticon.com/128/5773/5773168.png" alt=""></button>
+                    </div>
+                    <div class="certificate-box">
+                        <p class="flex-icon" id="blockchain">This workshop provides hands-on experience with Solidity, guiding participants through the process of developing a universal wallet capable of interacting with various cryptocurrencies and tokens on the blockchain.</p>
+                        <img src="assets/workshop Blockchain.png" alt="blockchain-certificate" id="myImage2" onclick="enlargeImage('myImage2', 'closeButton2')">
+                        <button id="closeButton2" class="certificate-button" style="display: none;" onclick="closeImage('myImage2', 'closeButton2')"><img src="https://cdn-icons-png.flaticon.com/128/5773/5773168.png" alt=""></button>
+                    </div>
+                    
+                    <div class="certificate-box">
+                        <p class="flex-icon" id="php-text">This certificate confirms the acquisition of foundational knowledge in utilizing a PHP server for web development. The recipient has demonstrated an understanding of server-side scripting with PHP, managing user interactions, and facilitating server communication to enhance website functionality.</p>
+                        <img src="assets/certificate of php beginners.png" alt="php-certificate" id="myImage3" onclick="enlargeImage('myImage3', 'closeButton3')">
+                        <button id="closeButton3" class="certificate-button" style="display: none;" onclick="closeImage('myImage3', 'closeButton3')"><img src="https://cdn-icons-png.flaticon.com/128/5773/5773168.png" alt=""></button>
+                    </div>
+                    <div class="certificate-box">
+                        <p class="flex-icon" id="googleanalytics">This certificate validates the holder's expertise in Google Analytics, demonstrating their ability to effectively set up and manage a Google Analytics property, collect essential business data, and utilize various reporting tools and features.</p>
+                        <img src="assets/Google Analytic certificate.jpg" alt="googleanalytics-certificate" id="myImage4" onclick="enlargeImage('myImage4', 'closeButton4')">
+                        <button id="closeButton4" class="certificate-button" style="display: none;" onclick="closeImage('myImage4', 'closeButton4')"><img src="https://cdn-icons-png.flaticon.com/128/5773/5773168.png" alt=""></button>
+                    </div>
+                    <div class="certificate-box">
+                        <p class="flex-icon" id="excel">This beginner-level course is designed to introduce participants to the fundamentals of Microsoft Excel. It covers the basics of creating and navigating spreadsheets, entering and formatting data, and using simple formulas and functions to perform calculations.</p>
+                        <img src="assets/certificate_excel.jpg" alt="excel-certificate" id="myImage5" onclick="enlargeImage('myImage5', 'closeButton5')">
+                        <button id="closeButton5" class="certificate-button" style="display: none;" onclick="closeImage('myImage5', 'closeButton5')"><img src="https://cdn-icons-png.flaticon.com/128/5773/5773168.png" alt=""></button>
+                    </div>
+                </figure>
+            </article>
+        </section>
+        <a id="jump-contact"></a>
+        <section class="contact-section">
+            <article class="contact-container">
+                <h1 class="head-text" >MyContact</h1>
+                <figure class="contact-content">
+                    <div class="formtext-container">
+                        <h1>CONTACT ME</h1>
+                        <pre id="author-name" class="flex-icon">Name      :   <span>Emmanuel S. Ablao  </span></pre>
+                        <pre id="author-phone" class="flex-icon">Phone     :   <span>09955116005 / 09519044954  </span></pre>
+                        <pre id="author-email" class="flex-icon">Email      :  <span> emmanuelablao16@gmail.com  </span></pre>
+                        <br/>
+                        
+                    <div class="social-link">
+                        <a href=""><img src="https://cdn-icons-png.flaticon.com/128/2504/2504911.png" alt=""></a>
+                        <a href=""><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt=""></a>
+                        <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt=""></a>
+                    </div>
+                    <a href="" class="contact-btn" id="download-cv">Download CV</a>
+                    </div>
+                    <div class="form-container">
+                        <form action="" method="POST" id="form-message">
+                            <h4>PLEASE TELL ME</h4>
+                            <input type="text" name="name" id="username" placeholder="Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <textarea name="message" id="" cols="30" rows="5" itemid="message" placeholder="Message"></textarea>
+                            <br />
+                            <button type="submit" id="submit" class="contact-btn">SEND MESSAGE</button>
+                        </form> 
+                    </div>
+                    
+                </figure>
+            </article>
+        </section>
+    </main>
+    <!-- <aside>
+        <a href="#to-top"><img src="assets/not-active-to-top.png" alt="Got to top icon"><p></p></a>
+    </aside> -->
+    <footer>
+      <p> CopyRight &copy; This Website is Created by Emmanuel S. Ablao</p>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
