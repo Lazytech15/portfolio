@@ -109,7 +109,12 @@ body.dark-mode header{
     top: 0;
 }
 .nav-bar-icon{
+    transition: var(--transition-delay2);
     background-color:var(--backgroundcolor-light);
+}
+body.dark-mode .nav-bar-icon{
+    transition: var(--transition-delay2);
+    background-color:var(--backgroundcolor-dark);
 }
 nav ul{
     display: flex;
@@ -421,6 +426,7 @@ body.dark-mode .filler {
     align-items:flex-start;
 }
 .about-me span{
+    transition: var(--transition-delay2);
     font-weight: var(--text-weight-bold);
     color: var(--textcolorsample4);
 }
@@ -430,9 +436,9 @@ body.dark-mode .flex-icon{
 }
 
 body.dark-mode .about-me span{
+    transition: var(--transition-delay2);
     color: var(--textcolorsample3); 
 }
-
 #author-name::before {
     background-image: url("https://cdn-icons-png.flaticon.com/128/1144/1144709.png");
 }
@@ -457,10 +463,6 @@ body.dark-mode .about-me span{
 }
 #author-foods::before {
     background-image: url("https://cdn-icons-png.flaticon.com/128/3075/3075977.png");
-}
-
-#author-photos::before {
-    background-image: url("https://cdn-icons-png.flaticon.com/128/1042/1042339.png");
 }
 #author-photos::before {
     background-image: url("https://cdn-icons-png.flaticon.com/128/1042/1042339.png");
@@ -828,7 +830,7 @@ body.dark-mode footer{
     background-color:rgba(44, 44, 44, 0.575) ;
 }
 
-@media (max-width:700px) {
+@media screen and (max-width:700px) {
         body{
             height: 100vh;
         }
@@ -839,17 +841,24 @@ body.dark-mode footer{
             position: fixed;
             top: initial;
             right: initial;
-            bottom: 0;
+            bottom: 20px;
+            padding: 10px;
+            border-radius: 20px 20px 20px;
             left: 50%;
             transform: translate(-50%);
+            width: 90%;
             font-size: 0.8em;
-            background-color: var(--backgroundcolor-light);
-            border-top-left-radius: 30%;
-            border-top-right-radius: 30%;
+            background-color: var(--textcolorsample2);
             z-index: 999;
         }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+        }
         body.dark-mode .nav-bar-icon{
-            background-color:rgb(44, 44, 44);
+            background-color:rgb(190, 0, 0);
         }
         nav ul{
             width: 50%;
@@ -873,6 +882,8 @@ body.dark-mode footer{
         .about-interest{
             display: flex;
             flex-direction: column;
+            gap:5px;
+            margin-left:10px;
         }
         .project-content{
             display: flex;
@@ -906,9 +917,9 @@ body.dark-mode footer{
             width:80%;
             text-align: center;
         }
-        .flex-icon::before{
+        /* .flex-icon::before{
             display: none;
-        }
+        } */
         .contact-content{
             display: flex;
             flex-direction: column;

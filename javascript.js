@@ -106,13 +106,25 @@ educButton.addEventListener('click', function() {
 function enlargeImage(imageId, buttonId) {
   var img = document.getElementById(imageId);
   var btn = document.getElementById(buttonId);
-  img.style.transform = "scale(2)"; 
-  img.style.transition = "var(--transition-delay2)";
-  img.style.position = "fixed";
-  img.style.left = "50%";
-  img.style.top = "50%";
-  img.style.transform = "translate(-50%, -50%) scale(10)";
-  btn.style.display = "block"; 
+  if (window.innerWidth > 700) {
+    img.style.transform = "scale(2)"; 
+    img.style.transition = "var(--transition-delay2)";
+    img.style.position = "fixed";
+    img.style.left = "50%";
+    img.style.top = "50%";
+    img.style.transform = "translate(-50%, -50%) scale(10)";
+    btn.style.display = "block";
+    
+  }else{
+    img.style.transform = "scale(1)"; 
+    img.style.transition = "var(--transition-delay2)";
+    img.style.position = "fixed";
+    img.style.left = "50%";
+    img.style.top = "50%";
+    img.style.transform = "translate(-50%, -50%) scale(3.5)";
+    btn.style.display = "block";
+    btn.style.top ="400px"; 
+  }
 }
 
 function closeImage(imageId, buttonId) {
